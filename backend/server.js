@@ -11,7 +11,7 @@ import {v2 as cloudinary} from 'cloudinary';
 dotenv.config();
 connectDB();
 const app=express();
-const PORT =process.env.PORT||5000;
+const PORT =process.env.PORT||10000;
 cloudinary.config({ 
     cloud_name: process.env.CLOUD_NAME, 
     api_key: process.env.CLOUDINARY_API_KEY, 
