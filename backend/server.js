@@ -12,6 +12,10 @@ dotenv.config();
 connectDB();
 const app=express();
 const PORT =process.env.PORT||10000;
+app.use((req, res, next) => {
+  res.type('application/javascript');
+  next();
+});
 cloudinary.config({ 
     cloud_name: process.env.CLOUD_NAME, 
     api_key: process.env.CLOUDINARY_API_KEY, 
