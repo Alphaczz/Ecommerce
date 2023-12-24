@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useShowToast from '../hooks/useShowToast';
 import { useState } from 'react';
-import { get } from 'mongoose';
 import Post from '../components/Post';
 import { useRecoilState } from 'recoil';
 import postAtom from '../atoms/postAtom';
