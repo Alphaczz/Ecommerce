@@ -31,7 +31,7 @@ app.use(cookieParser());
 
 // Enable CORS for a specific origin
 app.use(cors({
-  origin: 'https://threads-sigma-brown.vercel.app',
+  origin: 'https://threads-46bny2aw7-shivams-projects-d393e6d4.vercel.app',
   credentials: true, // enable set cookie
 }));
 
