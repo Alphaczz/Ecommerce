@@ -46,19 +46,23 @@ const LoginCard = () => {
         body: JSON.stringify(formData),
         headers: { "Content-Type": "application/json" },
       });
-  
+       console.log(res);
       // Check if the response status is OK (2xx)
       if (res.ok) {
         const data = await res.json();
+    
         showToast("Login Successful", "You have been logged in", "success");
         localStorage.setItem("user-data", JSON.stringify(data));
         setUser(data);
       } else {
         const data = await res.json();
         showToast("Error", data.message || "Something went wrong", "error");
+        console.log("Raw Response:", yourRawResponse);
+
       }
     } catch (error) {
       showToast("Error", error.message, "error");
+      console.log(error);
     }finally{
       setLoading(false);
     };
