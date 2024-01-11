@@ -42,6 +42,15 @@ app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+<<<<<<< HEAD
+=======
+// Enable CORS for a specific origin
+app.use(cors({
+  origin: 'https://threads-46bny2aw7-shivams-projects-d393e6d4.vercel.app',
+  credentials: true, // enable set cookie
+}));
+
+>>>>>>> be572bc48f6a461f115d1c1eed67c34c32521971
 // Routes
 app.use("/api/users", userRoutes);
 app.use("/api/posts", userPosts);
