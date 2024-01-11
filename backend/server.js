@@ -24,7 +24,7 @@ cloudinary.config({
 
 // CORS middleware
 app.use(cors({
-  origin: 'https://threads-sigma-brown.vercel.app',
+  origin: 'https://vercel.live/link/threads-ppnm1zt8i-shivams-projects-d393e6d4.vercel.app',
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
