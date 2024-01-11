@@ -24,7 +24,7 @@ cloudinary.config({
 
 // CORS middleware
 app.use(cors({
-  origin: 'https://threads-5h5v5d1mo-shivams-projects-d393e6d4.vercel.app',
+  origin: 'threads-sigma-brown.vercel.app',
   credentials: true, // enable set cookie
   allowedHeaders: 'Content-Type,Authorization', // specify allowed headers
 }));
