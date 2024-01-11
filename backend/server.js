@@ -24,9 +24,9 @@ cloudinary.config({
 
 // CORS middleware
 app.use(cors({
-  origin: 'https://threads-sigma-brown.vercel.app/',
-  credentials: true, // enable set cookie
-  allowedHeaders: 'Content-Type,Authorization', // specify allowed headers
+  origin: 'https://threads-sigma-brown.vercel.app',
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 // Other middlewares
